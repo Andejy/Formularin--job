@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Css Styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200;300;600&family=Rubik+Moonrocks&family=VT323&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title" class="text-center">Formulario de empelo</h1>
+            <h2>Indie Arts</h2>
+            <p id="description" class="description text-center">
+                Gracias por elegirnos como posible fuente de empleo
+            </p>
+        </header>
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">Nombre</label>
+                <input name="Angel" id="name" class="form-control" type="text" placeholder="Ingrese su Nombre" required>
+            </div>
+            <div class="form-group">
+                <label id="email-label" for="email">email</label>
+                <input name="email" id="email" class="form-control" type="email" placeholder="Ingrese su email"
+                    required>
+            </div>
+            <div class="form-group">
+                <label id="number-label" for="number">Edad<span class="clue">(optional)</span></label>
+                <input name="age" min="10" max="99" id="number" class="form-control" type="number" placeholder="Edad">
+            </div>
+            <div class="form-group">
+                <p>Que opcion describe mejor tu tarbajo Actual ?</p>
+                <select id="dropdown" name="role" class="form-control" required>
+                    <option disabled selected value>Select current role</option>
+                    <option value="student">Estudiante</option>
+                    <option value="job">Trabajador de tiempo completo</option>
+                    <option value="learner">Full Time Learner</option>
+                    <option value="preferNo">Prefiero no decir</option>
+                    <option value="other">Otros</option>
+                </select>
+            </div>
+
+
+
+            <div class="form-group">
+                <p>Tu Recomendarias Nuestra Pagina a algun Amigo ? </p>
+                <label> <input name="user-recommend" value="definitely" id="number" type="radio" class="input-radio"
+                        checked> Definitivamente </label>
+
+                <label> <input name="user-recommend" value="Maybe" id="number" type="radio" class="input-radio"> Talves
+                </label>
+
+                <label> <input name="user-recommend" value="not-sure" id="number" type="radio" class="input-radio"> Para
+                    nada </label>
+            </div>
+
+
+            <div class="form-group">
+                <p>Cual es tu zona favorita de nuestra Empresa </p>
+                <select name="most-like" id="most-like" class="form-control" required>
+                    <option disabled selected value>Select your favorite zone</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p> Que te gusta Mas desarrolar </p>
+                <label><input name="prefer" value="frond-end-projects" type="checkbox"
+                        class="input-chetbox">frond-end-projects</label>
+                <label><input name="prefer" value="back-end-projects" type="checkbox" class="input-checkbox">
+                    back-end-projects</label>
+                <label><input name="prefer" value="data-visualization" type="checkbox" class="input-checkbox">data
+                    data-visualization </label>
+                <label><input name="prefer" value="open-source-community" type="checkbox" class="input-checkbox">
+                    open-source-community</label>
+                <label><input name="prefer" value="gitter-help-rooms" type="checkbox" class="input-checkbox">
+                    gitter-help-rooms</label>
+                <label><input name="prefer" value="video" type="checkbox" class="input-checkbox"> video</label>
+                <label><input name="prefer" value="meetups" type="checkbox" class="input-checkbox"> meetups</label>
+                <label><input name="prefer" value="wiki" type="checkbox" class="input-checkbox"> wiki</label>
+                <label><input name="prefer" value="forums" type="checkbox" class="input-checkbox"> forums</label>
+                <label><input name="prefer" value="input-chetbox" type="checkbox" class="input-checkbox">
+                    checkbox</label>
+                <label><input name="prefer" value="input-texarea" type="checkbox" class="input-checkbox">texarea</label>
+
+            </div>
+            <div class="form-group">
+                <p>Puede realizar un comentario </p>
+                <textarea class="input-texarea" name="comement" id="comement"
+                    placeholder="Ingrese su comentario Aqui"></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">
+                    enviar
+                </button>
+            </div>
+        </form>
+
+    </div>
+</body>
+
+</html>
