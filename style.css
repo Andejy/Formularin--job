@@ -8,8 +8,7 @@ body {
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
-    color: #e87e04;
-    text-shadow: 2px 0 0 rgb(1, 1, 1), -2px 0 0 rgb(0, 0, 0), 0 2px 0 rgb(0, 0, 0), 0 -2px 0 rgb(0, 0, 0), 1px 1px rgb(0, 0, 0), -1px -1px 0 rgb(0, 0, 0), 1px -1px 0 rgb(0, 0, 0), -1px 1px 0 rgb(0, 0, 0);
+    color:  #3D3C42;
     margin: 0;
 }
 input,
@@ -19,19 +18,19 @@ textarea {
     margin: 0;
     font-size: 16px;
     line-height: inherit;
-    color: #e87e04;
-    font-family: 'Luxurious Roman', cursive;
+    color:  #7F5283;
+    font-family: 'Roboto', sans-serif;
 }
 
 
 textarea{
-    border:2px solid #e87e04;
+    border:2px solid  #7F5283;
 }
 
 
 
 option{
-    color: #22313f;
+    color: #ffffff;
 }
 
  body::before {
@@ -42,10 +41,8 @@ option{
     height: 100%;
     width: 100%;
     z-index: -1;
-    background: #000000;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+   background: #FEFBF6;
+    
 } 
 .container {
     width: 100%;
@@ -59,7 +56,7 @@ header {
 header h1 {
     font-size: 3em;
     font-weight: bold;
-    color: #fc9725;
+    color: #3D3C42;
     
 }
 
@@ -76,7 +73,7 @@ h1 p {
      display: block;
     font-size: 2.5em;
     font-weight: bold;
-    color:#fc9725;
+    color:#3D3C42;
     text-align: center;
     animation: flicker 1.5s infinite alternate;
      
@@ -87,13 +84,15 @@ h1 p {
 .description {
     font-size: 1.5em;
     font-weight: bold;
-    color:#fc9725;
-    text-shadow: #fc9725 15px 0px 15px;
+    color:#3D3C42;
+    
 }
 
 form {
-    border: 3px solid #fc9725;
-   background-color: #22313f;
+    box-shadow: 12px 9px 19px 10px rgba(0,0,0,0.73);
+    -webkit-box-shadow: 12px 9px 19px 10px rgba(0,0,0,0.73);
+    -moz-box-shadow: 12px 9px 19px 10px rgba(0,0,0,0.73);
+   background-color: #FEFBF6;
     border-radius: 10px;
     padding: 2.5rem 0.1rem;
     animation: flicker2 1.5s infinite alternate;
@@ -123,15 +122,15 @@ label {
     width: 100%;
     height: 2.3em;
     padding: 0.375rem 0.75rem;
-    color: rgb(255, 255, 255);
-    background-color:#a75a0396; ;
+    color: #ffffff;
+    background-color:#7F5283; ;
     background-clip: padding-box;
-    border: 2px solid#fc9725;
+    border: 2px solid#7F5283;
     border-radius: 0.25rem;
    
 }
 .form-control:focus {
-    border-color: #fc9725;
+    border-color: #7F5283;
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgb(1, 1, 1);
   }
@@ -139,7 +138,7 @@ label {
     text-shadow: none;
     margin-left: 00.25rem;
     font-size: 1.25rem;
-    color: #fc9725;
+    color: #7F5283;
 }
 
 .input-radio{
@@ -167,32 +166,28 @@ input::placeholder {
     resize: vertical;
 }
 .submit-button {
-    
+    background-color: #7F5283;
     display: block;
     width: 100%;
+    color: #262627;
     height: 2.5rem;
     font-size: 1.5rem;
     font-weight: bold;
-    color:#fc9725;
-   background: #000000;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to bottom, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to bottom, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-   
-    
-    border: 2px solid #fc9725;
+    border: 2px solid #1d1c1d;
     border-radius: 10px;
     cursor: pointer;
     transition: .5s;
 }
 
 .submit-button:hover {
-   background: #fc9725;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to bottom,#fc9725, #000000);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to bottom, #fc9725, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+    background-color: rgba(255, 255, 255,0.30);
+    box-shadow: 0 8px  32px 0 rgba(31,38,135,0.37);
+    backdrop-filter: blur(20px);
+    border: 2px solid rgba(255, 255, 255,0.18);
+    color: #7F5283;
 
-    color: rgb(1, 1, 1);
-    border: 2px solid #000;
+    border: 2px solid #1d1c1d;
 }
 
 @media (min-width: 768px) {
